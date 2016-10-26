@@ -34,7 +34,7 @@ for line in fin:
         del response
         used_imgs.add(img)
         fout.write(img_link + "\n")
-        print(str(cnt) + " Saved image: %s" % img)
+        print(str(cnt) + " Saved image: %s" % img[1:])
         cnt += 1
 
     del soup
