@@ -16,7 +16,7 @@ cnt = 1
 
 for line in fin:
     url = line
-    print("looking page %s" % s)
+    print("looking page %s" % url)
     page = get(prefix + url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
